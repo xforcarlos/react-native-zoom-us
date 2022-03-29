@@ -17,6 +17,33 @@ const ReactNativeZoomUs = NativeModules.ReactNativeZoomUs
       }
     );
 
+console.log('ReactNativeZoomUs', ReactNativeZoomUs);
+console.log('getConstants', ReactNativeZoomUs.getConstants());
 export function multiply(a: number, b: number): Promise<number> {
   return ReactNativeZoomUs.multiply(a, b);
+}
+
+export async function initZoom(
+  jwtToken: string,
+  domain: string
+): Promise<void> {
+  const response = await ReactNativeZoomUs.initZoom(jwtToken, domain);
+  console.log('response', response);
+}
+
+interface StartMeetingType {
+  userName: string;
+  meetingNumber: string;
+  userId: string;
+  zoomAccessToken: string;
+}
+
+export async function startMeeting(data: StartMeetingType): Promise<void> {
+  try {
+    console.log('data', data);
+    const response = await ReactNativeZoomUs.startMeeting({ ...data });
+    console.log('response', response);
+  } catch (error) {
+    console.log('error', error);
+  }
 }

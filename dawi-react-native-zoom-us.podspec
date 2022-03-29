@@ -14,6 +14,11 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/xforcarlos/dawi-react-native-zoom-us.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}"
+  s.requires_arc = true
 
+  s.static_framework = true
   s.dependency "React-Core"
+  s.dependency "React"
+  s.dependency "ZoomSDK", '5.9.6.2769'
+
 end
