@@ -11,11 +11,21 @@ npm install @dawi/react-native-zoom-us
 ## Usage
 
 ```js
-import { multiply } from "@dawi/react-native-zoom-us";
+import { initZoom  , startMeeting} from "@dawi/react-native-zoom-us";
 
 // ...
 
-const result = await multiply(3, 7);
+  const steupSdk = async () => await initZoom(init_sdk_jwt_token, 'zoom.us');
+
+  
+    await startMeeting({
+      meetingNumber: "",
+      zoomAccessToken:"",
+      userId:"",
+      userName: 'dawi',
+      userType: 1,
+    });
+
 ```
 
 ## Contributing
