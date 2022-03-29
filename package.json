@@ -1,6 +1,6 @@
 {
-  "name": "@dawi/react-native-zoom-us",
-  "version": "0.0.1",
+  "name": "rn-native-zoom-us",
+  "version": "0.0.2",
   "description": "zoom meeting sdk bridge",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/xforcarlos/dawi-react-native-zoom-us",
+  "repository": "https://github.com/xforcarlos/react-native-zoom-us",
   "author": "Mahmoud hamdy <mahmoudheldawy@outlook.com> (https://github.com/xforcarlos)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xforcarlos/dawi-react-native-zoom-us/issues"
+    "url": "https://github.com/xforcarlos/react-native-zoom-us/issues"
   },
-  "homepage": "https://github.com/xforcarlos/dawi-react-native-zoom-us#readme",
+  "homepage": "https://github.com/xforcarlos/react-native-zoom-us#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
